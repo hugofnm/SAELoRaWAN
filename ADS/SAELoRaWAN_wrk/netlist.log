@@ -1,0 +1,24 @@
+; Top Design: "SAELoRaWAN_lib:ligne2:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="SAELoRaWAN_lib:ligne2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+model MSub1 MSUB H=0.787 mm Er=2.2 Mur=1 Cond=1.0E+50 Hu=1e+33 mm T=0.035 mm TanD=0 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  N__1 N__2 Subst="MSub1" W=2.37796 mm notune{ 1.18898 mm to 3.56694 mm by 0.237796 mm } L=60 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=4 GHz Stop=5 GHz Step=10 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+mGND:mGND1  N__0 
+Port:Term1  N__1 N__0 Num=1 Z=50 Ohm Noise=yes 
+mGND:mGND2  N__3 
+Port:Term2  N__2 N__3 Num=2 Z=50 Ohm Noise=yes 

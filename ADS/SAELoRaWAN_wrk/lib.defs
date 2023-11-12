@@ -1,0 +1,4 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE SAELoRaWAN_lib SAELoRaWAN_lib
+ASSIGN SAELoRaWAN_lib libMode shared
