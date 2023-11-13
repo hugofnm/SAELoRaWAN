@@ -10,11 +10,11 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2023-11-07T16:12:44Z");
+	set(ddoId, "FileModifiedDateAndTime", "2023-11-07T16:49:08Z");
 	set(ddoId, "FileCreatedDateAndTime", "2023-11-07T15:40:38Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
-	set(ddoId, "DefaultDataset", "ligne2");
+	set(ddoId, "DefaultDataset", "ligne2_MomUW_a");
 // Snap/Grid Defaults 
 	set(ddoId, "GridType", 0);
 	set(ddoId, "GridOn", FALSE);
@@ -263,7 +263,7 @@ goId0 = get_new(pageId, "Plot");
 // Graphical Object:
 	set(goId0, "Right", 8475);
 	set(goId0, "Bottom", 6379);
-	set(goId0, "Left", 3743);
+	set(goId0, "Left", 3806);
 	set(goId0, "Top", 3375);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
@@ -277,7 +277,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 882);
+	set(goId0, "LeftMargin", 819);
 	set(goId0, "RightMargin", 100);
 	set(goId0, "TopMargin", 125);
 	set(goId0, "BottomMargin", 504);
@@ -324,9 +324,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -160);
+		 set(axisID, "MinValue", -60);
 		 set(axisID, "MaxValue", 0);
-		 set(axisID, "StepSize", 20);
+		 set(axisID, "StepSize", 10);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -508,7 +508,7 @@ traceID = get_new(goId0, "Trace", "dB(S(1,1))", "X Axis", "Y Axis");
 ddWinId = get_new(ddsId, "Window", 960, 0, 958, 981);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 1181036670);
-	set(ddWinId, "PageViewRect_1181036670", list(-1107, 7235, 8661, 2391));
+	set(ddWinId, "PageViewRect_1181036670", list(-1108, 7235, 8662, 2391));
 	set(ddWinId, "Frame", list(960, 0, 958, 981));
 	set(ddWinId, "Maximized", TRUE);
 	set(ddWinId, "ForegroundColor", 0);

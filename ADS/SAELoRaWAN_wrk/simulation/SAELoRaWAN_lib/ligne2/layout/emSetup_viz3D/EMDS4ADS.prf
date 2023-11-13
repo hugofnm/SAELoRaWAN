@@ -1,7 +1,7 @@
 Begin_Block  Header 
   
   Mode  ASCII 
-  File_Name  C:/Users/m-hug/Downloads/SAELoRaWAN/SAELoRaWAN_wrk/simulation/SAELoRaWAN_lib/ligne2/layout/emSetup_viz3D/EMDS4ADS.prf 
+  File_Name  C:/Users/m-hug/Documents/GitHub/SAELoRaWAN/ADS/SAELoRaWAN_wrk/simulation/SAELoRaWAN_lib/ligne2/layout/emSetup_viz3D/EMDS4ADS.prf 
   Version  3.00 
   
 End_Block  Header 
@@ -33,10 +33,10 @@ Begin_Block  Data
   End_Plane_Block 
   
   Begin_Camera_Block 
-  Position     1.3718756103515625e+02     -7.8751007080078125e+01      1.2692333221435547e+02  
-  Target     3.0000000000000000e+01      0.0000000000000000e+00      4.1100001335144043e-01  
-  Up    -6.2000113725662231e-01      3.1236967444419861e-01      7.1973872184753418e-01  
-      7.3426170349121094e+01      7.3426170349121094e+01  
+  Position     6.3269931793212891e+01     -9.9666206359863281e+01      1.3026315307617188e+02  
+  Target     3.2683135986328125e+01     -4.2399477958679199e+00      4.7363209724426270e+00  
+  Up    -5.8708155155181885e-01      5.6912291049957275e-01      5.7570326328277588e-01  
+      6.4247901916503906e+01      6.4247901916503906e+01  
   End_Camera_Block 
   
   Begin_Background_Block 

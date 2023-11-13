@@ -1,13 +1,10 @@
-License checkout took 0.044 sec
-License checkout took 0.026 sec
+License checkout took 0.037 sec
+License checkout took 0.022 sec
 Momentum MomEngine_64 2024.00.281 (*) built: Jul 10 2023
 Copyright  1992 - 2023 Keysight Technologies
-Simulation started on: Tue Nov  7 17:48:05 2023
+Simulation started on: Mon Nov 13 14:15:36 2023
 Simulation Mode: uW
-Substrate to be computed from 4 GHz to 5 GHz!
-Substrate calculation started
-.........|.........|.........|.........| 
-Substrate calculation finished
+Substrate valid
 Using the minimal snap distance of 0.0004 mm
 (4 layout resolution points) for layout healing.
 Layout simplification started
@@ -66,5 +63,5 @@ Simulation frequency [5] = 4.88889 GHz
 ...calculating S-parameters
 Adaptive: 100.0 % of frequency range covered
 S-parameter simulation finished
-Simulation finished on: Tue Nov  7 17:48:07 2023
+Simulation finished on: Mon Nov 13 14:15:38 2023
 The simulation results have been saved in dataset "ligne2_MomUW".

@@ -1,5 +1,7 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows/>
+    <Windows>
+        <Substrate geom="1,0,2,273,58,1536,961,1920,1080" lib="SAELoRaWAN_lib" x1="-1" width="1920" y1="-9" height="991" file="substrateLORA"/>
+    </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>
