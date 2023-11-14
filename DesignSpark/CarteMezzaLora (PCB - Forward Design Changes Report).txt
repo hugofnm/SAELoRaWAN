@@ -1,0 +1,22 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Tuesday, November 14, 2023
+Project Path:       Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.prj
+Design Path:        Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteMezzaLora.pcb
+Design Title:       
+Created:            14/11/2023 15:08:23
+Last Saved:         14/11/2023 16:15:52
+Editing Time:       71 min
+Units:              mm (precision 1)
+
+Added component reference "C1" of component "100nF", package "DSC".
+Added component reference "C2" of component "100nF", package "DSC".
+
+Connected pin "C1.1" to net "+5V".
+Connected pin "C1.2" to net "GND".
+Connected pin "C2.1" to net "GND".
+Connected pin "C2.2" to net "+5V".
+
+
+End Of Report.

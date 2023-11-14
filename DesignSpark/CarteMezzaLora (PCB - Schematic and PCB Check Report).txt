@@ -1,0 +1,18 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Tuesday, November 14, 2023
+Project Path:       Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.prj
+Design Path:        Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteMezzaLora.pcb
+Design Title:       
+Created:            14/11/2023 15:08:23
+Last Saved:         14/11/2023 16:15:52
+Editing Time:       71 min
+Units:              mm (precision 1)
+
+
+Checking integrity of Schematic "Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.sch" with PCB "Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteMezzaLora.pcb"
+========================================================================================================================================================
+
+
+End Of Report.
