@@ -1,0 +1,241 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Tuesday, November 14, 2023
+Project Path:       Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.prj
+Design Path:        Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteMezzaLora.pcb
+Design Title:       
+Created:            14/11/2023 15:08:23
+Last Saved:         14/11/2023 16:26:04
+Editing Time:       84 min
+Units:              mm (precision 1)
+
+
+Results
+=======
+
+Track to Pad Error (T-P) between (499.1 514.6) and (499.6 515.1) on Layer "Bottom Copper".
+    Error between Component Pad TEMP.1 (Net 'GND') and Track (Net 'RX'), Gap is 0.5 needs to be 0.5.
+Track to Pad error (T-P) at (480.1 479.1) on layer "Bottom Copper".
+    Error between Component Pad U1.J2-16 and Track (Net 'SCL'), Gap is 0.0 needs to be 0.5.
+Track to Pad error (T-P) at (480.1 505.5) on layer "Top Copper".
+    Error between Component Pad U1.J1-12 (Net 'N0051') and Track (Net 'TX'), Gap is 0.0 needs to be 0.5.
+Track to Pad error (T-P) at (480.1 505.5) on layer "Bottom Copper".
+    Error between Component Pad U1.J1-12 (Net 'N0051') and Track (Net 'TX'), Gap is 0.0 needs to be 0.5.
+Pad to Via error (P-V) at (480.1 505.5) on layer "[All]".
+    Error between Component Pad U1.J1-12 (Net 'N0051') and Via (Net 'TX'), Gap is 0.0 needs to be 0.3.
+Track to Pad error (T-P) at (480.1 503.2) on layer "Bottom Copper".
+    Error between Component Pad U1.J1-14 and Track (Net 'TX'), Gap is 0.0 needs to be 0.5.
+Track to Pad error (T-P) at (480.1 500.7) on layer "Bottom Copper".
+    Error between Component Pad U1.J1-16 and Track (Net 'TX'), Gap is 0.0 needs to be 0.5.
+Track to Pad error (T-P) at (480.1 481.4) on layer "Bottom Copper".
+    Error between Component Pad U1.J2-14 and Track (Net 'SCL'), Gap is 0.0 needs to be 0.5.
+Pad to Pad Error (P-P) between (480.1 518.1) and (480.3 518.1) on Layer "[All]".
+    Error between Component Pad U1.J1-2 and Component Pad LED3.A (Net 'N0049'), Gap is 0.2 needs to be 0.3.
+Track to Pad error (T-P) at (480.1 517.8) on layer "Bottom Copper".
+    Error between Component Pad U1.J1-2 and Track (Net 'RX'), Gap is 0.0 needs to be 0.5.
+Track to Pad error (T-P) at (480.1 515.2) on layer "Bottom Copper".
+    Error between Component Pad U1.J1-4 and Track (Net 'RX'), Gap is 0.0 needs to be 0.5.
+Track to Pad error (T-P) at (525.2 510.4) on layer "Bottom Copper".
+    Error between Component Pad U1.J10-5 and Track (Net 'DEMARRAGE'), Gap is 0.0 needs to be 0.5.
+Track to Pad error (T-P) at (480.1 476.6) on layer "Bottom Copper".
+    Error between Component Pad U1.J2-18 (Net 'SDA') and Track (Net 'SCL'), Gap is 0.0 needs to be 0.5.
+Track to Pad Error (T-P) between (481.6 506.7) and (481.3 506.7) on Layer "Bottom Copper".
+    Error between Component Pad LED1.A (Net 'N0051') and Track (Net 'N0049'), Gap is 0.0 needs to be 0.5.
+Track to Pad Error (T-P) between (482.6 505.7) and (482.6 505.5) on Layer "Top Copper".
+    Error between Component Pad LED1.A (Net 'N0051') and Track (Net 'TX'), Gap is 0.0 needs to be 0.5.
+Track to Pad Error (T-P) between (484.1 505.7) and (484.1 505.5) on Layer "Top Copper".
+    Error between Component Pad LED1.K (Net 'N0106') and Track (Net 'TX'), Gap is 0.0 needs to be 0.5.
+Track to Pad Error (T-P) between (486.1 505.7) and (486.4 505.5) on Layer "Bottom Copper".
+    Error between Component Pad LED1.K (Net 'N0106') and Track (Net 'SLK'), Gap is 0.1 needs to be 0.5.
+Track to Pad Error (T-P) between (480.3 518.2) and (480.1 518.2) on Layer "Bottom Copper".
+    Error between Component Pad LED3.A (Net 'N0049') and Track (Net 'RX'), Gap is 0.0 needs to be 0.5.
+Track to Pad Error (T-P) between (512.8 496.3) and (512.4 496.0) on Layer "Bottom Copper".
+    Error between Component Pad SV1.1 (Net 'GND') and Track (Net '+12V'), Gap is 0.1 needs to be 0.5.
+Track to Pad Error (T-P) between (496.8 522.2) and (496.6 522.0) on Layer "Bottom Copper".
+    Error between Component Pad LED4.K (Net 'N0119') and Track (Net 'DEMARRAGE'), Gap is 0.1 needs to be 0.5.
+Track to Pad Error (T-P) between (499.1 520.4) and (499.1 520.7) on Layer "Bottom Copper".
+    Error between Component Pad R7.2 (Net 'GND') and Track (Net 'DEMARRAGE'), Gap is 0.0 needs to be 0.5.
+Track to Pad Error (T-P) between (502.9 512.7) and (502.9 513.1) on Layer "Bottom Copper".
+    Error between Component Pad C1.1 (Net '+5V') and Track (Net 'RX'), Gap is 0.1 needs to be 0.5.
+Track to Via Error (T-V) between (519.4 492.8) and (517.9 492.8) on Layer "Bottom Copper".
+    Error between Track (Net '+12V') and Via (Net '+5V'), Gap is 1.1 needs to be 2.0.
+Track to Via Error (T-V) between (519.4 490.2) and (521.0 490.2) on Layer "Bottom Copper".
+    Error between Track (Net '+12V') and Via (Net '+3.3V'), Gap is 1.1 needs to be 2.0.
+Track to Track Error (T-T) between (510.5 482.6) and (509.5 482.9) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Track (Net 'SDA'), Gap is 0.4 needs to be 0.5.
+Track to Track Error (T-T) between (510.5 482.6) and (509.5 482.9) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Track (Net 'SDA'), Gap is 0.4 needs to be 0.5.
+Track to Via Error (T-V) between (522.0 492.8) and (522.0 491.2) on Layer "Top Copper".
+    Error between Track (Net '+5V') and Via (Net '+3.3V'), Gap is 1.1 needs to be 2.0.
+Track to Via Error (T-V) between (492.5 490.2) and (493.0 490.2) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Via (Net 'SCL'), Gap is 0.2 needs to be 2.0.
+Track to Via Error (T-V) between (492.5 494.0) and (494.3 494.0) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Via (Net 'SSEL'), Gap is 1.4 needs to be 2.0.
+Track to Via Error (T-V) between (491.5 476.3) and (489.9 476.3) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Via (Net 'SDA'), Gap is 1.2 needs to be 2.0.
+Track to Via Error (T-V) between (506.7 478.8) and (506.7 477.3) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Via (Net 'SCL'), Gap is 1.2 needs to be 2.0.
+Track to Track Error (T-T) between (510.5 482.6) and (509.5 482.9) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Track (Net 'SDA'), Gap is 0.4 needs to be 0.5.
+Track to Track Error (T-T) between (501.0 478.2) and (501.6 477.5) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Track (Net 'SDA'), Gap is 0.3 needs to be 0.5.
+Track to Via Error (T-V) between (497.2 474.3) and (496.0 475.5) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Via (Net 'SDA'), Gap is 1.3 needs to be 2.0.
+Track to Track Error (T-T) between (499.7 509.9) and (500.4 509.3) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Track (Net 'TX'), Gap is 0.3 needs to be 0.5.
+Track to Via Error (T-V) between (494.5 507.5) and (495.9 506.2) on Layer "Bottom Copper".
+    Error between Track (Net '+5V') and Via (Net 'TX'), Gap is 1.5 needs to be 2.0.
+Track to Via Error (T-V) between (518.2 502.9) and (518.7 503.5) on Layer "Bottom Copper".
+    Error between Track (Net '+3.3V') and Via (Net 'RESET'), Gap is 0.4 needs to be 2.0.
+Track to Via Error (T-V) between (518.2 502.9) and (518.7 503.5) on Layer "Bottom Copper".
+    Error between Track (Net '+3.3V') and Via (Net 'RESET'), Gap is 0.4 needs to be 2.0.
+Track to Via Error (T-V) between (488.5 502.9) and (487.4 502.9) on Layer "Bottom Copper".
+    Error between Track (Net 'SCL') and Via (Net 'SLK'), Gap is 0.8 needs to be 2.0.
+Track to Via Error (T-V) between (504.8 483.2) and (503.6 484.4) on Layer "Bottom Copper".
+    Error between Track (Net 'SCL') and Via (Net 'N0060'), Gap is 1.4 needs to be 2.0.
+Track to Via Error (T-V) between (480.1 476.3) and (481.6 476.3) on Layer "Bottom Copper".
+    Error between Track (Net 'SCL') and Via (Net 'SDA'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (480.1 476.3) and (480.1 474.7) on Layer "Top Copper".
+    Error between Via (Net 'SCL') and Track (Net 'SDA'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (496.6 490.2) and (495.0 490.2) on Layer "Bottom Copper".
+    Error between Via (Net 'SCL') and Track (Net 'SSEL'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (505.5 475.0) and (506.0 475.5) on Layer "Bottom Copper".
+    Error between Via (Net 'SCL') and Track (Net 'SDA'), Gap is 0.5 needs to be 2.0.
+Track to Via Error (T-V) between (508.0 481.3) and (507.4 481.9) on Layer "Bottom Copper".
+    Error between Via (Net 'SCL') and Track (Net 'SDA'), Gap is 0.5 needs to be 2.0.
+Track to Via Error (T-V) between (504.2 476.3) and (503.6 475.7) on Layer "Bottom Copper".
+    Error between Track (Net 'SDA') and Via (Net 'N0060'), Gap is 0.5 needs to be 2.0.
+Track to Board Error (T-B) between (497.8 466.1) and (497.8 465.0) on Layer "Bottom Copper".
+    Error between Track (Net 'SDA') and Board, Gap is 0.8 needs to be 1.0.
+Track to Via Error (T-V) between (481.3 513.1) and (481.1 513.1) on Layer "Bottom Copper".
+    Error between Track (Net 'N0049') and Via (Net 'RX'), Gap is 0.0 needs to be 2.0.
+Track to Via Error (T-V) between (481.3 505.5) and (481.1 505.5) on Layer "Bottom Copper".
+    Error between Track (Net 'N0049') and Via (Net 'TX'), Gap is 0.0 needs to be 2.0.
+Track to Via Error (T-V) between (481.3 496.6) and (481.1 496.6) on Layer "Bottom Copper".
+    Error between Track (Net 'N0049') and Via (Net 'TX'), Gap is 0.0 needs to be 2.0.
+Track to Via Error (T-V) between (480.1 494.0) and (480.1 492.5) on Layer "Top Copper".
+    Error between Via (Net 'N0049') and Track (Net 'SSEL'), Gap is 1.3 needs to be 2.0.
+Track to Board Error (T-B) between (504.2 466.1) and (504.2 465.0) on Layer "Bottom Copper".
+    Error between Track (Net 'N0060') and Board, Gap is 0.8 needs to be 1.0.
+Track to Via Error (T-V) between (500.4 485.1) and (501.9 485.1) on Layer "Bottom Copper".
+    Error between Via (Net 'N0060') and Track (Net 'SSEL'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (480.1 510.5) and (480.1 512.1) on Layer "Top Copper".
+    Error between Via (Net 'RX') and Track (Net 'SLK'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (496.6 505.5) and (496.6 503.9) on Layer "Bottom Copper".
+    Error between Track (Net 'TX') and Via (Net 'SLK'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (496.6 505.5) and (496.6 503.9) on Layer "Top Copper".
+    Error between Track (Net 'TX') and Via (Net 'SLK'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (486.4 505.5) and (486.4 503.9) on Layer "Top Copper".
+    Error between Track (Net 'TX') and Via (Net 'SLK'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (496.6 502.9) and (496.6 504.5) on Layer "Bottom Copper".
+    Error between Via (Net 'TX') and Track (Net 'SLK'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (496.6 502.9) and (496.6 504.5) on Layer "Top Copper".
+    Error between Via (Net 'TX') and Track (Net 'SLK'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (480.1 494.0) and (480.1 495.6) on Layer "Top Copper".
+    Error between Via (Net 'TX') and Track (Net 'SSEL'), Gap is 1.3 needs to be 2.0.
+Track to Via Error (T-V) between (497.8 494.0) and (496.3 494.0) on Layer "Bottom Copper".
+    Error between Via (Net 'SSEL') and Track (Net 'SLK'), Gap is 1.3 needs to be 2.0.
+Gap in Net "+5V" between (502.9,511.8) and (518.2,549.9) 
+    +5V.
+Gap in Net "GND" between (494.5,497.8) and (500.4,497.8) 
+    GND.
+Gap in Net "GND" between (500.4,497.8) and (513.5,497.8) 
+    GND.
+Gap in Net "GND" between (513.5,497.8) and (513.5,487.7) 
+    GND.
+Gap in Net "GND" between (513.5,497.8) and (518.2,508.0) 
+    GND.
+Gap in Net "GND" between (518.2,508.0) and (513.5,513.1) 
+    GND.
+Gap in Net "GND" between (513.5,513.1) and (508.0,519.4) 
+    GND.
+Gap in Net "GND" between (508.0,519.4) and (502.9,516.9) 
+    GND.
+Gap in Net "GND" between (502.9,516.9) and (499.1,519.4) 
+    GND.
+Gap in Net "GND" between (502.9,516.9) and (498.3,513.1) 
+    GND.
+Gap in Net "GND" between (513.5,497.8) and (526.8,495.3) 
+    GND.
+Gap in Net "GND" between (494.5,497.8) and (493.2,482.6) 
+    GND.
+Gap in Net "GND" between (508.0,519.4) and (513.1,549.9) 
+    GND.
+Gap in Net "GND" between (513.1,549.9) and (533.4,548.6) 
+    GND.
+Gap in Net "GND" between (533.4,548.6) and (560.1,539.8) 
+    GND.
+Gap in Net "GND" between (494.5,497.8) and (449.5,516.2) 
+    GND.
+Gap in Net "GND" between (449.5,516.2) and (446.5,516.2) 
+    GND.
+Gap in Net "MISO" between (478.6,486.4) and (500.4,492.8) 
+    MISO.
+Gap in Net "MOSI" between (478.6,488.9) and (500.4,490.2) 
+    MOSI.
+Gap in Net "N0047" between (478.6,508.0) and (483.9,513.1) 
+    N0047.
+Gap in Net "N0051" between (478.6,505.4) and (482.6,506.7) 
+    N0051.
+Gap in Net "N0060" between (509.5,497.8) and (507.5,497.8) 
+    N0060.
+Gap in Net "N0060" between (507.5,497.8) and (505.5,519.4) 
+    N0060.
+Gap in Net "N0104" between (486.4,513.1) and (518.2,520.7) 
+    N0104.
+Gap in Net "N0106" between (485.1,506.7) and (547.4,539.8) 
+    N0106.
+Gap in Net "N0119" between (546.1,548.6) and (497.8,523.2) 
+    N0119.
+
+Number of errors found : 87
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    No
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  No
+Drill Backoff                   No
+Silkscreen Overlap              No
+Copper Text In Board            No
+Min Track Width                 No
+Min Annular Ring                No
+Min Paste Size                  No
+Vias In Pads                    No
+Unplated Vias                   No
+Unplated Pads With Inner Tracks No
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+Nets without Components      No
+Nets on No Connect pins      No
+Nets on No Connect pins      No
+
+
+
+End Of Report.
