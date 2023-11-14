@@ -1,5 +1,5 @@
 jobName=EmPpMsgs
 jobType=emprep
-designName=SAELoRaWAN_lib:patch:layout
+designName=SAELoRaWAN_lib:antenneLORA:layout
 ruleFilePath=
 addInfo="EM preprocessor messages displayed as DRC errors"

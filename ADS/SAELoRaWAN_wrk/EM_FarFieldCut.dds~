@@ -10,11 +10,11 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2023-11-13T14:02:08Z");
+	set(ddoId, "FileModifiedDateAndTime", "2023-11-13T14:10:04Z");
 	set(ddoId, "FileCreatedDateAndTime", "2014-01-16T16:04:52Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
-	set(ddoId, "DefaultDataset", "__emFar");
+	set(ddoId, "DefaultDataset", "emFar");
 // Snap/Grid Defaults 
 	set(ddoId, "GridType", 0);
 	set(ddoId, "GridOn", FALSE);
@@ -65,7 +65,7 @@ goId0 = get_new(pageId, "Listing");
 	set(goId0, "LabelOnOff", TRUE);
 	set(goId0, "OutlineLineType", ddsSolidLineType);
 	set(goId0, "OutlineThickness", 14);
-	set(goId0, "VerticalScroll", -1);
+	set(goId0, "VerticalScroll", 0);
 	set(goId0, "ShowIndependentData", FALSE);
 	set(goId0, "SuppressTable", FALSE);
 	set(goId0, "AutoSizeListingWidth", FALSE);
@@ -209,11 +209,17 @@ goId0 = get_new(pageId, "Text");
 	set(goId0, "FillPattern", -1);
 	set(goId0, "FillColor", 0);
 	set(goId0, "OutlineOnOff", FALSE);
+// Embedded Expressions:
+	set(goId0, "ComplexNumberFormat", ddsComplexFormatMagPhase);
+	set(goId0, "Format", ddsFormatAutomatic);
+	set(goId0, "NumDigits", 3);
+	set(goId0, "NumDataPoints", 3);
+	set(goId0, "TextDataSeparator", ", ");
 // Base Class Object:
 	set(goId0, "Name", "");
 	set(goId0, "Uid", 74572231);
 // Graphical Object:
-	set(goId0, "Right", 7939);
+	set(goId0, "Right", 6488);
 	set(goId0, "Bottom", 542);
 	set(goId0, "Left", 750);
 	set(goId0, "Top", 125);
@@ -231,8 +237,8 @@ goId0 = get_new(pageId, "AntennaPlot");
 // Graphical Object:
 	set(goId0, "Right", 4737);
 	set(goId0, "Bottom", 7124);
-	set(goId0, "Left", 305);
-	set(goId0, "Top", 2361);
+	set(goId0, "Left", 376);
+	set(goId0, "Top", 2416);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -245,9 +251,9 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 571);
+	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -272,9 +278,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", -29);
+		 set(axisID, "MaxValue", 11);
+		 set(axisID, "StepSize", 10);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -283,8 +289,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -301,9 +307,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MinValue", -29);
+		 set(axisID, "MaxValue", 11);
+		 set(axisID, "StepSize", 10);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -312,8 +318,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "10*log10(mag(Directivity))", "X Axis", "Y Axis");
 // Trace:
@@ -393,7 +399,7 @@ traceID = get_new(goId0, "Trace", "10*log10(mag(Gain))", "X Axis", "Y Axis");
 			set(traceID, "DensitySymbolType", ddsStarSymbol);
 		}
 	}
-legendID = get_new(goId0, "Legend", 4539, 514);
+legendID = get_new(goId0, "Legend", 4468, 459);
 // Legend
 	if(legendID != NULL) {
 		set(legendID, "Uid", 433865980);
@@ -415,8 +421,8 @@ goId0 = get_new(pageId, "AntennaPlot");
 // Graphical Object:
 	set(goId0, "Right", 4737);
 	set(goId0, "Bottom", 12874);
-	set(goId0, "Left", 305);
-	set(goId0, "Top", 8111);
+	set(goId0, "Left", 376);
+	set(goId0, "Top", 8166);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -429,9 +435,9 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 571);
+	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -456,9 +462,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", 0);
+		 set(axisID, "MaxValue", 0.03);
+		 set(axisID, "StepSize", 0.005);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -467,8 +473,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -486,8 +492,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
 		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MaxValue", 0.03);
+		 set(axisID, "StepSize", 0.005);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -496,8 +502,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "mag(Etheta)", "X Axis", "Y Axis");
 // Trace:
@@ -577,7 +583,7 @@ traceID = get_new(goId0, "Trace", "mag(Ephi)", "X Axis", "Y Axis");
 			set(traceID, "DensitySymbolType", ddsStarSymbol);
 		}
 	}
-legendID = get_new(goId0, "Legend", 4539, 514);
+legendID = get_new(goId0, "Legend", 4468, 459);
 // Legend
 	if(legendID != NULL) {
 		set(legendID, "Uid", 405666930);
@@ -599,8 +605,8 @@ goId0 = get_new(pageId, "AntennaPlot");
 // Graphical Object:
 	set(goId0, "Right", 11737);
 	set(goId0, "Bottom", 12874);
-	set(goId0, "Left", 7305);
-	set(goId0, "Top", 8111);
+	set(goId0, "Left", 7376);
+	set(goId0, "Top", 8166);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -613,9 +619,9 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 571);
+	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -640,9 +646,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", 0);
+		 set(axisID, "MaxValue", 8e-05);
+		 set(axisID, "StepSize", 2e-05);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -651,8 +657,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -670,8 +676,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
 		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MaxValue", 8e-05);
+		 set(axisID, "StepSize", 2e-05);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -680,8 +686,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "mag(Htheta)", "X Axis", "Y Axis");
 // Trace:
@@ -761,7 +767,7 @@ traceID = get_new(goId0, "Trace", "mag(Hphi)", "X Axis", "Y Axis");
 			set(traceID, "DensitySymbolType", ddsStarSymbol);
 		}
 	}
-legendID = get_new(goId0, "Legend", 4539, 514);
+legendID = get_new(goId0, "Legend", 4468, 459);
 // Legend
 	if(legendID != NULL) {
 		set(legendID, "Uid", 394836007);
@@ -784,7 +790,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "Right", 11737);
 	set(goId0, "Bottom", 7124);
 	set(goId0, "Left", 7376);
-	set(goId0, "Top", 2361);
+	set(goId0, "Top", 2416);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -799,7 +805,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -824,9 +830,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", 8e-10);
+		 set(axisID, "MaxValue", 1.2008e-06);
+		 set(axisID, "StepSize", 2e-07);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -835,8 +841,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -853,9 +859,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MinValue", 8e-10);
+		 set(axisID, "MaxValue", 1.2008e-06);
+		 set(axisID, "StepSize", 2e-07);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -864,8 +870,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "mag(RadiationIntensity)", "X Axis", "Y Axis");
 // Trace:
@@ -916,8 +922,8 @@ goId0 = get_new(pageId, "AntennaPlot");
 // Graphical Object:
 	set(goId0, "Right", 4737);
 	set(goId0, "Bottom", 18124);
-	set(goId0, "Left", 305);
-	set(goId0, "Top", 13361);
+	set(goId0, "Left", 376);
+	set(goId0, "Top", 13416);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -930,9 +936,9 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 571);
+	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -957,9 +963,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", -139);
+		 set(axisID, "MaxValue", 11);
+		 set(axisID, "StepSize", 50);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -968,8 +974,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -986,9 +992,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MinValue", -139);
+		 set(axisID, "MaxValue", 11);
+		 set(axisID, "StepSize", 50);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -997,8 +1003,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "dB(Eco/E_max)", "X Axis", "Y Axis");
 // Trace:
@@ -1078,7 +1084,7 @@ traceID = get_new(goId0, "Trace", "dB(Ecross/E_max)", "X Axis", "Y Axis");
 			set(traceID, "DensitySymbolType", ddsStarSymbol);
 		}
 	}
-legendID = get_new(goId0, "Legend", 4539, 514);
+legendID = get_new(goId0, "Legend", 4468, 459);
 // Legend
 	if(legendID != NULL) {
 		set(legendID, "Uid", 1180075347);
@@ -1101,7 +1107,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "Right", 18737);
 	set(goId0, "Bottom", 18124);
 	set(goId0, "Left", 14376);
-	set(goId0, "Top", 13361);
+	set(goId0, "Top", 13416);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -1116,7 +1122,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -1141,9 +1147,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", 29);
+		 set(axisID, "MaxValue", 54);
+		 set(axisID, "StepSize", 5);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1152,8 +1158,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -1170,9 +1176,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MinValue", 29);
+		 set(axisID, "MaxValue", 54);
+		 set(axisID, "StepSize", 5);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1181,8 +1187,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "dB(AxialRatio)", "X Axis", "Y Axis");
 // Trace:
@@ -1233,8 +1239,8 @@ goId0 = get_new(pageId, "AntennaPlot");
 // Graphical Object:
 	set(goId0, "Right", 11737);
 	set(goId0, "Bottom", 18124);
-	set(goId0, "Left", 7305);
-	set(goId0, "Top", 13361);
+	set(goId0, "Left", 7376);
+	set(goId0, "Top", 13416);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -1247,9 +1253,9 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 571);
+	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -1274,9 +1280,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", -35);
+		 set(axisID, "MaxValue", 5);
+		 set(axisID, "StepSize", 10);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1285,8 +1291,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -1303,9 +1309,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MinValue", -35);
+		 set(axisID, "MaxValue", 5);
+		 set(axisID, "StepSize", 10);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1314,8 +1320,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "dB(Elhp/E_max)", "X Axis", "Y Axis");
 // Trace:
@@ -1395,7 +1401,7 @@ traceID = get_new(goId0, "Trace", "dB(Erhp/E_max)", "X Axis", "Y Axis");
 			set(traceID, "DensitySymbolType", ddsStarSymbol);
 		}
 	}
-legendID = get_new(goId0, "Legend", 4539, 514);
+legendID = get_new(goId0, "Legend", 4468, 459);
 // Legend
 	if(legendID != NULL) {
 		set(legendID, "Uid", 886464968);
@@ -1418,7 +1424,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "Right", 18737);
 	set(goId0, "Bottom", 12874);
 	set(goId0, "Left", 14376);
-	set(goId0, "Top", 8111);
+	set(goId0, "Top", 8166);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -1433,7 +1439,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -1458,9 +1464,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", 0);
+		 set(axisID, "MaxValue", 200);
+		 set(axisID, "StepSize", 50);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1469,8 +1475,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -1488,8 +1494,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
 		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MaxValue", 200);
+		 set(axisID, "StepSize", 50);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1498,8 +1504,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "mag(TiltAngle)", "X Axis", "Y Axis");
 // Trace:
@@ -1551,7 +1557,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "Right", 18737);
 	set(goId0, "Bottom", 7124);
 	set(goId0, "Left", 14376);
-	set(goId0, "Top", 2361);
+	set(goId0, "Top", 2416);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
 	set(goId0, "Xrot", 0);
@@ -1566,7 +1572,7 @@ goId0 = get_new(pageId, "AntennaPlot");
 	set(goId0, "LegendOnOff", TRUE);
 	set(goId0, "LeftMargin", 500);
 	set(goId0, "RightMargin", 112);
-	set(goId0, "TopMargin", 514);
+	set(goId0, "TopMargin", 459);
 	set(goId0, "BottomMargin", 500);
 // Antenna Plot ...
 	set(goId0, "ZeroDegreeOrientation", "Automatic");
@@ -1591,9 +1597,9 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -1);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 1);
+		 set(axisID, "MinValue", 0);
+		 set(axisID, "MaxValue", 0.0025);
+		 set(axisID, "StepSize", 0.0005);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1602,8 +1608,8 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 // Axis...
@@ -1621,8 +1627,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
 		 set(axisID, "MinValue", 0);
-		 set(axisID, "MaxValue", 1);
-		 set(axisID, "StepSize", 0.5);
+		 set(axisID, "MaxValue", 0.0025);
+		 set(axisID, "StepSize", 0.0005);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -1631,8 +1637,8 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Polar axis...
 	if (axisID != NULL) {
 		set(axisID, "DisplayAllIndependentData", TRUE);
-		set(axisID, "IndepStart", 0);
-		set(axisID, "IndepStop", 1);
+		set(axisID, "IndepStart", -90);
+		set(axisID, "IndepStop", 90);
 	}
 traceID = get_new(goId0, "Trace", "mag(EffectiveArea)", "X Axis", "Y Axis");
 // Trace:
@@ -1686,9 +1692,9 @@ traceID = get_new(goId0, "Trace", "mag(EffectiveArea)", "X Axis", "Y Axis");
 ddWinId = get_new(ddsId, "Window", 962, 20, 958, 981);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 1708515570);
-	set(ddWinId, "PageViewRect_1708515570", list(0, 7350, 6975, 0));
+	set(ddWinId, "PageViewRect_1708515570", list(-1192, 18828, 22102, 7277));
 	set(ddWinId, "Frame", list(962, 20, 958, 981));
-	set(ddWinId, "Maximized", FALSE);
+	set(ddWinId, "Maximized", TRUE);
 	set(ddWinId, "ForegroundColor", 0);
 	set(ddWinId, "BackgroundColor", 8);
 	set(ddWinId, "WindowPageOrder", list("page 1"));

@@ -1,0 +1,17 @@
+
+hpeesofsim (*) 590.shp Aug  5 2023, MINT version 5
+    (64-bit windows built: Sun Aug 06, 2023 05:54:36 +0000)
+
+
+***** Simulation started at Tue Nov 14 15:36:23 2023
+      Running on host: "hugofnm"
+      In Directory: "C:\Users\m-hug\Documents\GitHub\SAELoRaWAN\ADS\SAELoRaWAN_wrk\data"
+      Process ID: 26680
+
+
+SP SP1[1] <SAELoRaWAN_lib:antenneLORA:schematic>   freq=(700 MHz->1.5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.71 seconds.
+

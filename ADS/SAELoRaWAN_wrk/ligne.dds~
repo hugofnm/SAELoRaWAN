@@ -10,11 +10,11 @@ ddoId = get_new(ddsId, "Object");
 // DataDisplay Object:
 	set(ddoId, "Path", dds_get_exec_path(what_file(0)));
 	set(ddoId, "Name", dds_get_exec_file(what_file(0)));
-	set(ddoId, "FileModifiedDateAndTime", "2023-11-07T15:14:45Z");
+	set(ddoId, "FileModifiedDateAndTime", "2023-11-07T15:21:45Z");
 	set(ddoId, "FileCreatedDateAndTime", "2023-11-07T13:29:03Z");
 	dssId = get(ddoId, "DatasetServer");
 // Default Dataset
-	set(ddoId, "DefaultDataset", "Z_100");
+	set(ddoId, "DefaultDataset", "Z_50_L_Tuned");
 // Snap/Grid Defaults 
 	set(ddoId, "GridType", 0);
 	set(ddoId, "GridOn", FALSE);
@@ -92,7 +92,7 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "X Axis");
 //Smith chart axis...
 	if (axisID != NULL) {
 		set(axisID, "ImpedanceOnOff", TRUE);
-		set(axisID, "AdmittanceOnOff", TRUE);
+		set(axisID, "AdmittanceOnOff", FALSE);
 		set(axisID, "AdmittanceColor", 93);
 		set(axisID, "AdmittanceLineThickness", 14);
 		set(axisID, "AdmittanceLineType", 0);
@@ -130,7 +130,7 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 //Smith chart axis...
 	if (axisID != NULL) {
 		set(axisID, "ImpedanceOnOff", TRUE);
-		set(axisID, "AdmittanceOnOff", TRUE);
+		set(axisID, "AdmittanceOnOff", FALSE);
 		set(axisID, "AdmittanceColor", 93);
 		set(axisID, "AdmittanceLineThickness", 14);
 		set(axisID, "AdmittanceLineType", 0);
@@ -185,7 +185,7 @@ goId0 = get_new(pageId, "Plot");
 // Graphical Object:
 	set(goId0, "Right", 9725);
 	set(goId0, "Bottom", 4800);
-	set(goId0, "Left", 4928);
+	set(goId0, "Left", 4803);
 	set(goId0, "Top", 1375);
 	set(goId0, "Zrot", 0);
 	set(goId0, "Yrot", 0);
@@ -199,7 +199,7 @@ goId0 = get_new(pageId, "Plot");
 	set(goId0, "FillColor", 0);
 // Plot base...
 	set(goId0, "LegendOnOff", TRUE);
-	set(goId0, "LeftMargin", 947);
+	set(goId0, "LeftMargin", 1072);
 	set(goId0, "RightMargin", 100);
 	set(goId0, "TopMargin", 125);
 	set(goId0, "BottomMargin", 925);
@@ -246,9 +246,9 @@ axisID = get_new(goId0, "Axis", ddsYaxis, "Y Axis");
 		 set(axisID, "LineType", 0);
 		 set(axisID, "TickFontSize", 112);
 		 set(axisID, "AutoscaleOnOff", TRUE);
-		 set(axisID, "MinValue", -9.54242573040304);
-		 set(axisID, "MaxValue", -9.54242573040285);
-		 set(axisID, "StepSize", 3.83693077310454e-14);
+		 set(axisID, "MinValue", -147.784465070904);
+		 set(axisID, "MaxValue", -147.784465070901);
+		 set(axisID, "StepSize", 5.91171556152403e-13);
 		 set(axisID, "Logarithmic", FALSE);
 		 set(axisID, "Font", "Arial For CAE");
 		 set(axisID, "Format", ddsFormatAutomatic);
@@ -344,7 +344,7 @@ traceID = get_new(goId0, "Trace", "dB(S(1,1))", "X Axis", "Y Axis");
 	set(goId0, "InitPlot", 0);
 goId0 = get_new(pageId, "Equation");
 // Expression...
-	set(goId0, "Expression", "p100=1-mag(S(1,1))*mag(S(1,1))");
+	set(goId0, "Expression", "p25=1-mag(S(1,1))*mag(S(1,1))");
 	set(goId0, "Font", "Arial For CAE");
 	set(goId0, "FontSize", 167);
 	set(goId0, "TextColor", 0);
@@ -356,7 +356,7 @@ goId0 = get_new(pageId, "Equation");
 	set(goId0, "Name", "");
 	set(goId0, "Uid", 1230717937);
 // Graphical Object:
-	set(goId0, "Right", 7549);
+	set(goId0, "Right", 7456);
 	set(goId0, "Bottom", 750);
 	set(goId0, "Left", 4750);
 	set(goId0, "Top", 500);
@@ -416,7 +416,7 @@ goId0 = get_new(pageId, "Listing");
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 40274894);
+		 set(axisID, "Uid", 1340552883);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -436,14 +436,14 @@ axisID = get_new(goId0, "Axis", ddsXaxis, "");
 		 set(axisID, "Format", ddsFormatAutomatic);
 		 set(axisID, "NumDigits", 3);
 	}
-traceID = get_new(goId0, "Trace", "p100", "", "");
+traceID = get_new(goId0, "Trace", "p25", "", "");
 // Text trace:
 	if (traceID != NULL) set(traceID, "ComplexNumberFormat", ddsComplexFormatMagPhase);
 // Trace:
 	if (traceID != NULL) {
 		set(traceID, "TraceType", ddsAutomaticTraceType);
 		set(traceID, "Color", 1);
-		set(traceID, "Uid", 1218068443);
+		set(traceID, "Uid", 962661428);
 		set(traceID, "UIIndex", 0);
 		set(traceID, "Status", 536913920);
 	}
@@ -460,7 +460,7 @@ traceID = get_new(goId0, "Trace", "p100", "", "");
 ddWinId = get_new(ddsId, "Window", 960, 0, 958, 981);
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 1674081984);
-	set(ddWinId, "PageViewRect_1674081984", list(2296, 5770, 15156, -608));
+	set(ddWinId, "PageViewRect_1674081984", list(-194, 5096, 9918, 80));
 	set(ddWinId, "Frame", list(960, 0, 958, 981));
 	set(ddWinId, "Maximized", TRUE);
 	set(ddWinId, "ForegroundColor", 0);

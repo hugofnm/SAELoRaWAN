@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="2" Version="100">
+<ADSWorkspace Revision="3" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <ConfigFile Name="dds.cfg" />
@@ -115,5 +115,10 @@
         <Data_Files Name="emFar.ds" />
         <Cell Name="SAELoRaWAN_lib:antenneLORA" />
         <Substrate Name="SAELoRaWAN_lib:substrateLORA.subst" />
+        <Dataset Name="antenneLORA_MomUW.ds" />
+        <Data_Files Name="antenneLORA_MomUW.ds" />
+        <Dataset Name="antenneLORA_MomUW_a.ds" />
+        <Data_Files Name="antenneLORA_MomUW_a.ds" />
+        <Data_Display Name="antenneLORA.dds" />
     </Workspace>
 </ADSWorkspace>
