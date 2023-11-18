@@ -1,5 +1,7 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows/>
+    <Windows>
+        <Schematic cell="antenneLORA" y1="-9" width="1920" height="991" geom="1,0,2,59,74,1536,821,1920,1080" lib="SAELoRaWAN_lib" view="schematic" x1="-1"/>
+    </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>
