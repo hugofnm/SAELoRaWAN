@@ -1,0 +1,71 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Tuesday, November 21, 2023
+Project Path:       Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.prj
+Design Path:        Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.pcb
+Design Title:       
+Created:            14/11/2023 15:08:23
+Last Saved:         21/11/2023 16:14:21
+Editing Time:       758 min
+Units:              mm (precision 1)
+
+
+Results
+=======
+
+Gap in Net "GND" between (486.4,522.3) and (454.2,517.4) 
+    GND.
+Gap in Net "GND" between (454.2,517.4) and (451.3,517.4) 
+    GND.
+
+Number of errors found : 2
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    No
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  No
+Drill Backoff                   No
+Silkscreen Overlap              No
+Copper Text In Board            No
+Min Track Width                 No
+Min Annular Ring                No
+Min Paste Size                  No
+Vias In Pads                    No
+Unplated Vias                   No
+Unplated Pads With Inner Tracks No
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+Nets without Components      No
+Nets on No Connect pins      No
+Nets on No Connect pins      No
+
+
+
+End Of Report.

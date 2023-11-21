@@ -1,0 +1,277 @@
+[
+    {
+        "id": "ba8e9be2528d15c2",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "86cc43a409bb8656",
+        "type": "mqtt in",
+        "z": "ba8e9be2528d15c2",
+        "name": "",
+        "topic": "v3/lorawan-mh209198-demo@ttn/devices/dev-gr1-mh209198/up",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "414855972e6903a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 780,
+        "wires": [
+            [
+                "5710227b3a879814",
+                "6a20d584c851d023",
+                "bdeb287e4d1ef281"
+            ]
+        ]
+    },
+    {
+        "id": "967a62cca2ae4ad6",
+        "type": "mqtt out",
+        "z": "ba8e9be2528d15c2",
+        "name": "",
+        "topic": "v3/lorawan-mh209198-demo@ttn/devices/dev-gr1-mh209198/down/push",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "414855972e6903a5",
+        "x": 1940,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "bad5092b0184240a",
+        "type": "function",
+        "z": "ba8e9be2528d15c2",
+        "name": "prepare message",
+        "func": "msg.payload={downlinks:[{\n    \"f_port\": 3,\n    \"frm_payload\":msg.valuettn,\n    \"priority\": \"NORMAL\"\n}]};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 840,
+        "wires": [
+            [
+                "967a62cca2ae4ad6",
+                "c886e8f7fc8c561d"
+            ]
+        ]
+    },
+    {
+        "id": "c886e8f7fc8c561d",
+        "type": "debug",
+        "z": "ba8e9be2528d15c2",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1740,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "c43e315d30028eb5",
+        "type": "base64",
+        "z": "ba8e9be2528d15c2",
+        "name": "",
+        "action": "",
+        "property": "valuettn",
+        "x": 1300,
+        "y": 840,
+        "wires": [
+            [
+                "bad5092b0184240a"
+            ]
+        ]
+    },
+    {
+        "id": "5710227b3a879814",
+        "type": "switch",
+        "z": "ba8e9be2528d15c2",
+        "name": "",
+        "property": "payload.uplink_message.decoded_payload.relative_humidity_2",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "30",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "30",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 860,
+        "y": 780,
+        "wires": [
+            [
+                "c27127d9be8ad18a"
+            ],
+            [
+                "92de64433e0f1d05"
+            ]
+        ]
+    },
+    {
+        "id": "c27127d9be8ad18a",
+        "type": "function",
+        "z": "ba8e9be2528d15c2",
+        "name": "sup à 28",
+        "func": "msg.valuettn = \"\"+1+\"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 780,
+        "wires": [
+            [
+                "c43e315d30028eb5"
+            ]
+        ]
+    },
+    {
+        "id": "92de64433e0f1d05",
+        "type": "function",
+        "z": "ba8e9be2528d15c2",
+        "name": "inf à 28",
+        "func": "msg.valuettn = \"\"+0+\"\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 900,
+        "wires": [
+            [
+                "c43e315d30028eb5"
+            ]
+        ]
+    },
+    {
+        "id": "6a20d584c851d023",
+        "type": "debug",
+        "z": "ba8e9be2528d15c2",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "fd2dfa126a16e3cb",
+        "type": "influxdb out",
+        "z": "ba8e9be2528d15c2",
+        "influxdb": "4e703c37a7517b67",
+        "name": "",
+        "measurement": "demo_tp",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1530,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "bdeb287e4d1ef281",
+        "type": "function",
+        "z": "ba8e9be2528d15c2",
+        "name": "remplissage database",
+        "func": "msg.data = {\n    temperature: msg.payload.uplink_message.decoded_payload.temperature_1,\n    humidity: msg.payload.uplink_message.decoded_payload.relative_humidity_2,\n    randomvalue: Math.random()*10\n};\nmsg.payload = msg.data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 660,
+        "wires": [
+            [
+                "fd2dfa126a16e3cb"
+            ]
+        ]
+    },
+    {
+        "id": "414855972e6903a5",
+        "type": "mqtt-broker",
+        "name": "lorawan-mh209198-demo",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4e703c37a7517b67",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "gr1_tpLoRa",
+        "name": "influx local",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    }
+]
