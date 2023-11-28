@@ -1,45 +1,35 @@
 Design Rule Check Report
 ------------------------
 
-Report Written:     Sunday, November 26, 2023
-Project Path:       C:\Users\m-hug\Documents\GitHub\SAELoRaWAN\DesignSpark\CarteLoRaWAN.prj
-Design Path:        C:\Users\m-hug\Documents\GitHub\SAELoRaWAN\DesignSpark\CarteLoRaWAN.pcb
+Report Written:     Tuesday, November 28, 2023
+Project Path:       Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.prj
+Design Path:        Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.pcb
 Design Title:       
 Created:            14/11/2023 15:08:23
-Last Saved:         26/11/2023 23:29:26
-Editing Time:       1225 min
+Last Saved:         28/11/2023 17:27:35
+Editing Time:       1400 min
 Units:              mm (precision 3)
 
 
 Results
 =======
 
-Pad to Text Error (P-X) between (523.750 526.875) and (523.638 528.276) on Layer "Top Copper".
-    Error between Pad (Net 'GND') and Text, Gap is 0.748 needs to be 2.000.
-Pad to Text Error (P-X) between (516.875 526.375) and (516.676 528.278) on Layer "Top Copper".
-    Error between Pad (Net 'GND') and Text, Gap is 0.748 needs to be 2.000.
-Pad to Text Error (P-X) between (509.125 526.875) and (509.398 528.291) on Layer "Top Copper".
-    Error between Pad (Net 'GND') and Text, Gap is 0.748 needs to be 2.000.
-Pad to Board Error (P-B) between (464.473 519.910) and (465.000 519.910) on Layer "[All]".
-    Error between Component Pad R8.2 (Net 'N0014') and Board, Gap is 0.463 needs to be 1.000.
-Pad to Shape Error (P-C) between (471.892 534.584) and (471.892 536.500) on Layer "Top Copper".
-    Error between Component Pad R10.1 (Net 'N0013') and Shape, Gap is 1.599 needs to be 2.000.
-Pad to Shape Error (P-C) between (473.416 534.584) and (472.950 536.500) on Layer "Top Copper".
-    Error between Component Pad R10.2 (Net 'N0014') and Shape, Gap is 1.655 needs to be 2.000.
-Track to Via Error (T-V) between (505.997 472.297) and (506.493 472.793) on Layer "Bottom Copper".
-    Error between Via (Net 'SSEL') and Track (Net 'SLK'), Gap is 0.447 needs to be 1.000.
-Track to Via Error (T-V) between (503.151 472.209) and (503.735 472.793) on Layer "Bottom Copper".
-    Error between Via (Net 'SLK') and Track (Net 'MOSI'), Gap is 0.572 needs to be 1.000.
-Track to Track Error (T-T) between (508.500 521.000) and (508.500 522.000) on Layer "Top Copper".
-    Error between Track (Net 'N0017') and Track (Net 'N0018'), Gap is 0.492 needs to be 0.500.
-Track to Track Error (T-T) between (508.000 522.000) and (508.000 523.000) on Layer "Top Copper".
-    Error between Track (Net 'N0018') and Track (Net 'N0020'), Gap is 0.492 needs to be 0.500.
-Track to Track Error (T-T) between (507.500 523.000) and (507.500 524.000) on Layer "Top Copper".
-    Error between Track (Net 'N0020') and Track (Net 'N0022'), Gap is 0.492 needs to be 0.500.
-Text to Text error (X-X) at (527.625 524.875) on layer "Top Copper".
+Pad to Board Error (P-B) between (465.563 529.410) and (465.000 529.410) on Layer "[All]".
+    Error between Pad (Net 'GND') and Board, Gap is 0.500 needs to be 1.000.
+Pad to Board Error (P-B) between (465.701 522.455) and (465.000 522.455) on Layer "[All]".
+    Error between Pad (Net 'GND') and Board, Gap is 0.637 needs to be 1.000.
+Track to Track Error (T-T) between (508.500 522.000) and (508.500 521.000) on Layer "Bottom Copper".
+    Error between Track (Net 'N0023') and Track (Net 'N0024'), Gap is 0.492 needs to be 0.500.
+Track to Track Error (T-T) between (508.000 522.000) and (508.000 523.000) on Layer "Bottom Copper".
+    Error between Track (Net 'N0023') and Track (Net 'N0026'), Gap is 0.492 needs to be 0.500.
+Track to Track Error (T-T) between (509.000 521.000) and (509.000 520.000) on Layer "Bottom Copper".
+    Error between Track (Net 'N0024') and Track (Net 'N0025'), Gap is 0.492 needs to be 0.500.
+Text to Text error (X-X) at (527.808 521.680) on layer "Bottom Copper".
     Error between Text and Text, Gap is 0.000 needs to be 0.254.
-Text to Text error (X-X) at (513.375 522.375) on layer "Top Copper".
-    Error between Text and Text, Gap is 0.000 needs to be 0.254.
+Shape to Board error (C-B) at (534.999 538.326) on layer "Top Copper".
+    Error between Board and Shape, Gap is 0.000 needs to be 1.000.
+Gap in Net "antenne" between (454.960,533.197) and (458.050,536.715) 
+    antenne.
 Gap in Net "GND" between (529.908,499.877) and (532.447,501.650) 
     GND.
 Gap in Net "GND" between (490.220,524.700) and (488.632,529.273) 
@@ -50,35 +40,17 @@ Gap in Net "GND" between (529.908,499.877) and (532.447,494.665)
     GND.
 Gap in Net "GND" between (486.410,524.700) and (481.647,529.273) 
     GND.
-Gap in Net "GND" between (481.647,529.273) and (474.663,529.273) 
-    GND.
-Gap in Net "GND" between (474.663,529.273) and (467.678,529.273) 
+Gap in Net "GND" between (481.647,529.273) and (475.639,529.425) 
     GND.
 Gap in Net "GND" between (495.618,529.273) and (502.603,529.273) 
-    GND.
-Gap in Net "GND" between (467.678,529.273) and (467.678,522.288) 
-    GND.
-Gap in Net "GND" between (467.678,522.288) and (467.678,515.303) 
-    GND.
-Gap in Net "GND" between (467.678,515.303) and (467.678,508.317) 
-    GND.
-Gap in Net "GND" between (467.678,508.317) and (467.678,501.332) 
-    GND.
-Gap in Net "GND" between (467.678,501.332) and (467.678,494.348) 
-    GND.
-Gap in Net "GND" between (467.678,494.348) and (467.678,487.363) 
-    GND.
-Gap in Net "GND" between (467.678,487.363) and (467.678,480.377) 
-    GND.
-Gap in Net "GND" between (467.678,480.377) and (467.678,473.392) 
-    GND.
-Gap in Net "GND" between (467.678,473.392) and (467.678,466.408) 
     GND.
 Gap in Net "GND" between (532.447,494.665) and (532.447,487.680) 
     GND.
 Gap in Net "GND" between (532.447,487.680) and (532.447,480.695) 
     GND.
 Gap in Net "GND" between (532.447,480.695) and (532.447,473.710) 
+    GND.
+Gap in Net "GND" between (532.447,473.710) and (525.992,472.072) 
     GND.
 Gap in Net "GND" between (532.447,501.650) and (532.447,508.635) 
     GND.
@@ -104,6 +76,26 @@ Gap in Net "GND" between (494.771,463.746) and (501.756,463.746)
     GND.
 Gap in Net "GND" between (481.330,463.834) and (474.345,464.185) 
     GND.
+Gap in Net "GND" between (474.345,464.185) and (467.678,466.408) 
+    GND.
+Gap in Net "GND" between (467.678,466.408) and (467.678,473.392) 
+    GND.
+Gap in Net "GND" between (467.678,473.392) and (467.678,480.377) 
+    GND.
+Gap in Net "GND" between (467.678,480.377) and (467.678,487.363) 
+    GND.
+Gap in Net "GND" between (467.678,487.363) and (467.678,494.348) 
+    GND.
+Gap in Net "GND" between (467.678,494.348) and (467.678,501.332) 
+    GND.
+Gap in Net "GND" between (467.678,501.332) and (467.678,508.317) 
+    GND.
+Gap in Net "GND" between (467.678,508.317) and (467.678,515.303) 
+    GND.
+Gap in Net "GND" between (467.678,515.303) and (466.701,522.455) 
+    GND.
+Gap in Net "GND" between (466.701,522.455) and (466.563,529.410) 
+    GND.
 Gap in Net "GND" between (501.756,463.746) and (509.165,463.746) 
     GND.
 Gap in Net "GND" between (509.165,463.746) and (516.361,463.746) 
@@ -116,20 +108,18 @@ Gap in Net "GND" between (467.678,515.303) and (455.665,514.918)
     GND.
 Gap in Net "GND" between (455.665,514.918) and (452.715,514.918) 
     GND.
-Gap in Net "N0012" between (459.520,520.799) and (460.239,525.725) 
-    N0012.
-Gap in Net "N0012" between (459.520,520.799) and (454.190,513.369) 
-    N0012.
-Gap in Net "N0013" between (460.239,529.535) and (470.749,533.695) 
-    N0013.
-Gap in Net "N0014" between (463.330,520.799) and (474.559,533.695) 
-    N0014.
-Dangling Track from (508.500,521.000) to (509.000,521.000) on layer Top Copper
-Dangling Track from (507.500,521.500) to (510.000,521.500) on layer Top Copper
-Dangling Track from (506.500,522.000) to (511.000,522.000) on layer Top Copper
-Dangling Track from (505.500,522.500) to (512.000,522.500) on layer Top Copper
+Gap in Net "N0129" between (452.012,524.310) and (454.960,529.388) 
+    N0129.
+Gap in Net "N0129" between (452.012,524.310) and (454.190,513.369) 
+    N0129.
+Gap in Net "N0132" between (455.822,524.310) and (461.860,536.715) 
+    N0132.
+Dangling Track from (507.000,521.000) to (511.500,521.000) on layer Bottom Copper
+Dangling Track from (508.000,520.500) to (510.500,520.500) on layer Bottom Copper
+Dangling Track from (509.000,520.000) to (509.500,520.000) on layer Bottom Copper
+Dangling Track from (506.000,521.500) to (512.500,521.500) on layer Bottom Copper
 
-Number of errors found : 59
+Number of errors found : 54
 
 
 Settings

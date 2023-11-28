@@ -1,0 +1,33 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Tuesday, November 28, 2023
+Project Path:       Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.prj
+Design Path:        Z:\IUT\BUT2\SAE LoRaWAN\DESIGNSPARK\CarteLoRaWAN.pcb
+Design Title:       
+Created:            14/11/2023 15:08:23
+Last Saved:         28/11/2023 17:05:46
+Editing Time:       1380 min
+Units:              mm (precision 3)
+
+Disconnected pin "U1.J2-6" from net "N0049".
+Disconnected pin "LED3.A" from net "N0049".
+Disconnected pin "C2.1" from net "GND".
+Disconnected pin "C2.2" from net "+5V".
+
+Deleted net "N0049".
+
+Added net "N0177".
+
+Connected pin "U1.J1-14" to net "N0177".
+Connected pin "LED3.A" to net "N0177".
+Connected pin "C2.1" to net "+5V".
+Connected pin "C2.2" to net "GND".
+
+Net N0060 renamed to N0185
+Net N0012 renamed to N0129
+Net N0013 renamed to antenne
+Net N0014 renamed to N0132
+
+
+End Of Report.

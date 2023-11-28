@@ -1,0 +1,22 @@
+[
+    {
+        "id": "7fc7c4cffebc8279",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "remplissage database",
+        "func": "msg.data = {\n    temperature: msg.payload.uplink_message.decoded_payload.temperature_1,\n    humidity: msg.payload.uplink_message.decoded_payload.relative_humidity_2,\n    randomvalue: Math.random()*10\n};\nmsg.payload = msg.data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 660,
+        "wires": [
+            [
+                "e6439c1698e0c4a5"
+            ]
+        ]
+    }
+]
