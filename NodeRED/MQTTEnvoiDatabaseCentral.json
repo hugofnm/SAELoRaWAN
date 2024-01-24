@@ -1,0 +1,889 @@
+[
+    {
+        "id": "eca2a879645ca4f9",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "414855972e6903a5",
+        "type": "mqtt-broker",
+        "name": "lorawan-mh209198-demo",
+        "broker": "eu1.cloud.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4e703c37a7517b67",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "GR1B_SAELORA",
+        "name": "influx local",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "db105e7af0fb497a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "378e075522ff05ae",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "99bdab412c268a4d",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "db105e7af0fb497a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "944e91ed89abfbd4",
+        "type": "influxdb",
+        "hostname": "134.59.29.124",
+        "port": "8086",
+        "protocol": "http",
+        "database": "GR1_2024",
+        "name": "database central",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "d4e4e214cdf37166",
+        "type": "mqtt in",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "topic": "v3/lorawan-mh209198-demo@ttn/devices/dev-gr1-mh209198/up",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "414855972e6903a5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 780,
+        "wires": [
+            [
+                "fd4df974bcb9de4e",
+                "7fc7c4cffebc8279",
+                "3938e0c4cc3a55a0",
+                "8d8ab9536c22e3d1",
+                "6c33b9bfee5075d9",
+                "572dea1340501822",
+                "e1fb8b84bb728c22",
+                "c48982cd55d56cc6",
+                "a43d49335edf495c",
+                "223ad7b73cd6a68e",
+                "2d419df26593e04d"
+            ]
+        ]
+    },
+    {
+        "id": "fd4df974bcb9de4e",
+        "type": "debug",
+        "z": "eca2a879645ca4f9",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "7fc7c4cffebc8279",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "IsolationVariableBadge",
+        "func": "var nfcTag = msg.payload.uplink_message.decoded_payload.RFID;\nnfcTag = nfcTag.toString();\nnfcTag = nfcTag.toUpperCase();\n\nmsg.query = \"select * from BADGES where BADGE_ID='\"+ nfcTag +\"'\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 920,
+        "wires": [
+            [
+                "5b8e405e1223ee26"
+            ]
+        ]
+    },
+    {
+        "id": "3938e0c4cc3a55a0",
+        "type": "ui_gauge",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "group": "99bdab412c268a4d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Température",
+        "label": "Celsius",
+        "format": "{{msg.payload.uplink_message.decoded_payload.temperature}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 870,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "8d8ab9536c22e3d1",
+        "type": "ui_gauge",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "group": "99bdab412c268a4d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidité",
+        "label": "%",
+        "format": "{{msg.payload.uplink_message.decoded_payload.humidity}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 860,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "872206de081330dd",
+        "type": "worldmap",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "0",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,UKOS",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 1080,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "6c33b9bfee5075d9",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "Get Lat/Long",
+        "func": "msg.payload = {\n    \"name\":\"MyLoRaWAN\",\n    \"lat\": msg.payload.uplink_message.decoded_payload.latitude,\n    \"lon\": msg.payload.uplink_message.decoded_payload.longitude\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 460,
+        "wires": [
+            [
+                "872206de081330dd"
+            ]
+        ]
+    },
+    {
+        "id": "572dea1340501822",
+        "type": "ui_gauge",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "group": "99bdab412c268a4d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "UV",
+        "label": "units",
+        "format": "{{msg.payload.uplink_message.decoded_payload.luminosity}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "e1fb8b84bb728c22",
+        "type": "ui_text",
+        "z": "eca2a879645ca4f9",
+        "group": "99bdab412c268a4d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "NFC",
+        "format": "{{msg.payload.uplink_message.decoded_payload.RFID}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 850,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5b8e405e1223ee26",
+        "type": "influxdb in",
+        "z": "eca2a879645ca4f9",
+        "influxdb": "4e703c37a7517b67",
+        "name": "DemandeBadgeDB",
+        "query": "",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 1170,
+        "y": 920,
+        "wires": [
+            [
+                "e7e5c740dc0774b2",
+                "92b73f22f0f38ded"
+            ]
+        ]
+    },
+    {
+        "id": "e7e5c740dc0774b2",
+        "type": "switch",
+        "z": "eca2a879645ca4f9",
+        "name": "SwitchDémarrage",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "empty"
+            },
+            {
+                "t": "nempty"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1430,
+        "y": 920,
+        "wires": [
+            [
+                "657f9968f6578856"
+            ],
+            [
+                "a3fe098740737f49"
+            ]
+        ]
+    },
+    {
+        "id": "657f9968f6578856",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "Inconnu",
+        "func": "msg.payload = {\n    downlinks: [{\n        \"f_port\": 3,\n        \"frm_payload\": flow.get(\"inconnu\"),\n        \"priority\": \"NORMAL\"\n    }]\n}\nmsg.message=\"BADGE INCONNU !!!\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 880,
+        "wires": [
+            [
+                "5d1ec34465f467ba",
+                "f3caabddb792291a"
+            ]
+        ]
+    },
+    {
+        "id": "5d1ec34465f467ba",
+        "type": "debug",
+        "z": "eca2a879645ca4f9",
+        "name": "debug 6",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "message",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1840,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "e4ffbcc63019c39c",
+        "type": "mqtt out",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "topic": "v3/lorawan-mh209198-demo@ttn/devices/dev-gr1-mh209198/down/push",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "414855972e6903a5",
+        "x": 2380,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "f3b7678f62667720",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "SendCommandeDemarrage",
+        "func": "msg.payload = {\n    downlinks: [{\n        \"f_port\": 3,\n        \"frm_payload\": flow.get(\"demarrage\"),\n        \"priority\": \"NORMAL\"\n    }]\n}\nmsg.message = \"Démarrage Autorisé\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1920,
+        "y": 1120,
+        "wires": [
+            [
+                "e4ffbcc63019c39c",
+                "7eb954fafbf0fdeb"
+            ]
+        ]
+    },
+    {
+        "id": "a3fe098740737f49",
+        "type": "switch",
+        "z": "eca2a879645ca4f9",
+        "name": "BadgeConnu",
+        "property": "payload[0].DEM",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1650,
+        "y": 1000,
+        "wires": [
+            [
+                "8fefedb64e1307f7"
+            ],
+            [
+                "f3b7678f62667720"
+            ]
+        ]
+    },
+    {
+        "id": "8fefedb64e1307f7",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "SendCommandePasDemarrage",
+        "func": "msg.payload = {\n    downlinks: [{\n        \"f_port\": 3,\n        \"frm_payload\": flow.get(\"pasdemarrage\"),\n        \"priority\": \"NORMAL\"\n    }]\n}\nmsg.message=\"Démarrage Non-Autorisé\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1930,
+        "y": 1000,
+        "wires": [
+            [
+                "b030a45b6ecd7a02",
+                "a733a1e862710efc"
+            ]
+        ]
+    },
+    {
+        "id": "b030a45b6ecd7a02",
+        "type": "debug",
+        "z": "eca2a879645ca4f9",
+        "name": "debug 7",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "message",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2200,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "92b73f22f0f38ded",
+        "type": "debug",
+        "z": "eca2a879645ca4f9",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "7eb954fafbf0fdeb",
+        "type": "debug",
+        "z": "eca2a879645ca4f9",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "message",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2180,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "a733a1e862710efc",
+        "type": "mqtt out",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "topic": "v3/lorawan-mh209198-demo@ttn/devices/dev-gr1-mh209198/down/push",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "414855972e6903a5",
+        "x": 2400,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "8f232cac98035b00",
+        "type": "base64",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "action": "",
+        "property": "valuettn",
+        "x": 1140,
+        "y": 1060,
+        "wires": [
+            [
+                "dd6cb58711cff1b9"
+            ]
+        ]
+    },
+    {
+        "id": "c48982cd55d56cc6",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "Inconnu",
+        "func": "msg.valuettn = \"\"+2+\"\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1060,
+        "wires": [
+            [
+                "8f232cac98035b00"
+            ]
+        ]
+    },
+    {
+        "id": "dd6cb58711cff1b9",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "SetInconnu",
+        "func": "flow.set(\"inconnu\", msg.valuettn)",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aedd90be7e7f270a",
+        "type": "base64",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "action": "",
+        "property": "valuettn",
+        "x": 1100,
+        "y": 1120,
+        "wires": [
+            [
+                "fb9d38e4f374a2fd"
+            ]
+        ]
+    },
+    {
+        "id": "a43d49335edf495c",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "PasDemarrage",
+        "func": "msg.valuettn = \"\"+0+\"\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 1120,
+        "wires": [
+            [
+                "aedd90be7e7f270a"
+            ]
+        ]
+    },
+    {
+        "id": "fb9d38e4f374a2fd",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "SetPasDemarrage",
+        "func": "flow.set(\"pasdemarrage\", msg.valuettn)",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3caabddb792291a",
+        "type": "mqtt out",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "topic": "v3/lorawan-mh209198-demo@ttn/devices/dev-gr1-mh209198/down/push",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "414855972e6903a5",
+        "x": 2040,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "66b7244f793ef24b",
+        "type": "base64",
+        "z": "eca2a879645ca4f9",
+        "name": "",
+        "action": "",
+        "property": "valuettn",
+        "x": 1100,
+        "y": 1180,
+        "wires": [
+            [
+                "b286c13bc5c8b9c1"
+            ]
+        ]
+    },
+    {
+        "id": "223ad7b73cd6a68e",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "Demarrage",
+        "func": "msg.valuettn = \"\"+1+\"\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1180,
+        "wires": [
+            [
+                "66b7244f793ef24b"
+            ]
+        ]
+    },
+    {
+        "id": "b286c13bc5c8b9c1",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "SetDemarrage",
+        "func": "flow.set(\"demarrage\", msg.valuettn)",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d419df26593e04d",
+        "type": "function",
+        "z": "eca2a879645ca4f9",
+        "name": "PrepareKiffyData",
+        "func": "msg.payload={\n    \"TEMPERATURE\": msg.payload.uplink_message.decoded_payload.temperature,\n    \"HUMIDITE\": msg.payload.uplink_message.decoded_payload.humidity,\n    \"LAT\": msg.payload.uplink_message.decoded_payload.latitude,\n    \"LON\": msg.payload.uplink_message.decoded_payload.longitude,\n    \"ALT\": msg.payload.uplink_message.decoded_payload.altitude,\n    \"NFC\": msg.payload.uplink_message.decoded_payload.RFID,\n    \"KIFFY_ID\": 1,\n    \"UV\": msg.payload.uplink_message.decoded_payload.luminosity,\n    \"GAS\": msg.payload.uplink_message.decoded_payload.gas\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 780,
+        "wires": [
+            [
+                "6abddc50cd540b51",
+                "a99a1ff0ddcf75f4"
+            ]
+        ]
+    },
+    {
+        "id": "6abddc50cd540b51",
+        "type": "debug",
+        "z": "eca2a879645ca4f9",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "a99a1ff0ddcf75f4",
+        "type": "influxdb out",
+        "z": "eca2a879645ca4f9",
+        "influxdb": "944e91ed89abfbd4",
+        "name": "PushKiffyData_central",
+        "measurement": "KIFFY_DATA",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1160,
+        "y": 780,
+        "wires": []
+    }
+]

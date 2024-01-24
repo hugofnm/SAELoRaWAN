@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="3" Version="100">
+<ADSWorkspace Revision="5" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <ConfigFile Name="dds.cfg" />
@@ -120,5 +120,15 @@
         <Dataset Name="antenneLORA_MomUW_a.ds" />
         <Data_Files Name="antenneLORA_MomUW_a.ds" />
         <Data_Display Name="antenneLORA.dds" />
+        <Data_Display Name="antenneLORA_abaque.dds" />
+        <Log Name="writedxf.log" />
+        <Preferences Name="ads_datacmps_lay.prf" />
+        <Dataset Name="antenneLORA.ds" />
+        <Dataset Name="antenneLORA_in.ds" />
+        <Data_Files Name="antenneLORA.ds" />
+        <Data_Files Name="antenneLORA_data\logFile.txt" />
+        <Data_Files Name="antenneLORA_in.ds" />
+        <Data_Files Name="antenneLORA_in_data\logFile.txt" />
+        <Cell Name="SAELoRaWAN_lib:antenneLORA_Adaptee" />
     </Workspace>
 </ADSWorkspace>

@@ -1,14 +1,11 @@
-; Top Design: "SAELoRaWAN_lib:antenneLORA:schematic"
+; Top Design: "SAELoRaWAN_lib:antenneLORA_Adaptee2:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="SAELoRaWAN_lib:antenneLORA:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
-#uselib "ckt" , "SnP"
-SnP:SnP1  N__6 NumPorts=1 File="C:\Users\m-hug\Documents\GitHub\SAELoRaWAN\ADS\SAELoRaWAN_wrk\data\antenneLORA_MomUW_a.ds" Type="dataset" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
-Port:Term1  N__2 0 Num=1 Z=50 Ohm Noise=yes 
-S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
-SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
-
-SweepPlan: SP1_stim Start=0.7 GHz Stop=1.5 GHz Step=1.0 MHz 
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="SAELoRaWAN_lib:antenneLORA_Adaptee2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+model CPWSub1 CPWSUB H=1.6 mm Er=4.6 Mur=1 Cond=1.0E+50 T=0.035 mm TanD=0 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+Port:Term1  N__7 0 Num=1 Z=50 Ohm Noise=yes 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz Freq=868 MHz DevOpPtLevel=0 SPSS_WSP=yes \
+OutputPlan="SP1_Output" 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -19,5 +16,10 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-L:L1  N__2 N__6 L=1.786 nH notune{ 0.1 nH to 10 nH by 0.1 nH } Noise=yes  
-C:C1  N__2 0 C=7.083 pF tune{ 0.1 pF to 40 pF by 0.1 pF } 
+R:R1  N__5 N__1 R=24.57 Ohm Noise=yes 
+L:L1  N__1 N__3 L=12.05 nH Noise=yes  
+CPWG:CPW1  N__10 N__8 Subst="CPWSub1" W=1.3 mm G=0.28 mm L=-4.7 mm 
+CPWG:CPW2  N__8 N__5 Subst="CPWSub1" W=2.45 mm G=1 mm L=-9.7 mm 
+mGND:mGND1  N__3 
+L:L2  N__7 N__10 L=6.8 nH tune{ 0.5 nH to 10 nH by 0.01 nH } Noise=yes  
+C:C1  N__10 0 C=8.2 pF Temp=6.8 
