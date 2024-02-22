@@ -1,0 +1,157 @@
+<mxfile host="app.diagrams.net" modified="2024-01-21T17:57:29.271Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 OPR/106.0.0.0 (Edition std-1)" etag="TvtXLNV8PVmFYzsWNoTj" version="22.1.19" type="device">
+  <diagram name="Page-1" id="Y7uaicM7MsTI5FW1A5AV">
+    <mxGraphModel dx="983" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-iphone-128.png" parent="1" vertex="1">
+          <mxGeometry x="20" y="287" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-9" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="230" y="320" width="150" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="Lnp08aYd1DlnoVV8Q1Vs-9" vertex="1">
+          <mxGeometry y="10" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-4" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Lnp08aYd1DlnoVV8Q1Vs-9" target="Lnp08aYd1DlnoVV8Q1Vs-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="20" as="sourcePoint" />
+            <mxPoint x="100" y="-30" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="20" />
+              <mxPoint x="60" y="10" />
+              <mxPoint x="70" y="10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="Lnp08aYd1DlnoVV8Q1Vs-9" vertex="1">
+          <mxGeometry x="100" y="34" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="Lnp08aYd1DlnoVV8Q1Vs-9" vertex="1">
+          <mxGeometry x="80" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-8" value="" style="curved=1;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="Lnp08aYd1DlnoVV8Q1Vs-9" source="Lnp08aYd1DlnoVV8Q1Vs-3" target="Lnp08aYd1DlnoVV8Q1Vs-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="30" as="sourcePoint" />
+            <mxPoint x="90" y="20" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="70" y="20" />
+              <mxPoint x="70" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-10" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;startArrow=block;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="343.58" as="sourcePoint" />
+            <mxPoint x="480" y="344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-20" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="500" y="311" width="80" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-16" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry x="20" y="39" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-17" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry x="20" y="26" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-18" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry x="20" y="13" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-19" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry x="20" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-12" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry y="52" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-13" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry y="39" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-14" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry y="26" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-15" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-20" vertex="1">
+          <mxGeometry y="13" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-21" value="Application mobile" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="407" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-22" value="Node-RED" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="245" y="407" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-23" value="InfluxDB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="480" y="407" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-24" value="HTTP GET" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="103" y="311" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-25" value="Requêtes SELECT et INSERT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="386" y="297" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-28" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="160" y="64" width="48" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-26" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/electronic-13/480/3-electronic-arduino-chipset-icon-2-128.png" parent="Lnp08aYd1DlnoVV8Q1Vs-28" vertex="1">
+          <mxGeometry y="10" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-27" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;shape=mxgraph.electrical.radio.aerial_-_antenna_1;" parent="Lnp08aYd1DlnoVV8Q1Vs-28" vertex="1">
+          <mxGeometry x="8" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-30" value="" style="shape=mxgraph.signs.transportation.bicycle_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" parent="1" vertex="1">
+          <mxGeometry x="60" y="60" width="99" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-31" value="" style="shape=mxgraph.cisco.wireless.antenna;html=1;pointerEvents=1;dashed=0;strokeWidth=2;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="70" width="88" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-35" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="500" y="110" width="80" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-33" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="Lnp08aYd1DlnoVV8Q1Vs-35" vertex="1">
+          <mxGeometry y="1.9156626506024095" width="73.84615384615385" height="51.084337349397586" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-34" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.wi_fi;" parent="Lnp08aYd1DlnoVV8Q1Vs-35" vertex="1">
+          <mxGeometry x="49.23076923076923" width="30.76923076923077" height="30.76923076923077" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-36" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="208" y="100" as="sourcePoint" />
+            <mxPoint x="350" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-37" value="LoRaWAN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="245" y="78" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-39" value="Gateway LoRaWAN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="344" y="42" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-40" value="The Things Network" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="520" y="163" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-42" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="310" as="sourcePoint" />
+            <mxPoint x="500" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-43" value="MQTT" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-40;" parent="1" vertex="1">
+          <mxGeometry x="380" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Lnp08aYd1DlnoVV8Q1Vs-45" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="117.5" y="339.58" as="sourcePoint" />
+            <mxPoint x="214.5" y="339.58" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GTSxKS9WzErCfxhrzlMj-1" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;startArrow=block;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="136.20999999999998" as="sourcePoint" />
+            <mxPoint x="500" y="136.63" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GTSxKS9WzErCfxhrzlMj-3" value="Kiffy équipé d&#39;un μc compatible LoRaWAN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="56" y="130" width="167" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
